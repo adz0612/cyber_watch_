@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#A6CBFF"
+    tools:context=".MainActivity">
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="16dp"
+        android:fontFamily="@font/amaranth_bold"
+        android:text=""
+        android:textColor="#FFFF"
+        android:textSize="20sp"
+
+        android:textStyle="bold" />
+
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="60dp"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_marginTop="160dp"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="16dp"
+            android:fontFamily="@font/amaranth_bold"
+            android:text="Latest News"
+            android:textColor="#FFFF"
+            android:textSize="25sp"
+
+            android:textStyle="bold" />
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="10dp"/>
+
+ <androidx.core.widget.NestedScrollView
+     android:layout_height="350dp"
+
+     android:layout_width="match_parent">
+     
+<LinearLayout
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+
+    
+    <androidx.recyclerview.widget.RecyclerView
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:scrollbars="vertical"
+        android:id="@+id/recyclerView"
+        android:layout_height="wrap_content">
+
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+
+
+
+
+</LinearLayout>
+
+
+
+
+ </androidx.core.widget.NestedScrollView>
+    </LinearLayout>
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="60dp"/>
+
+    <Button
+        android:id="@+id/generalScam"
+        android:layout_width="300dp"
+        android:layout_marginTop="720dp"
+        android:text="General Info"
+        android:textStyle="normal"
+        android:layout_marginLeft="60dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/round_button" />
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

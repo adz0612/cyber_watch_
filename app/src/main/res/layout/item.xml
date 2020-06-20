@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
+        android:layout_marginRight="11dp"
+        android:layout_marginLeft="11dp"
+        android:layout_marginBottom="7dp"
+        app:cardElevation="@dimen/cardview_default_elevation"
+        app:cardCornerRadius="10dp">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+    
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:id="@+id/img"
+        android:scaleType="centerCrop"
+        android:transitionName="img"
+        tools:ignore="UnusedAttribute"/>
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:id="@+id/shadow_bottom"
+        android:src="@drawable/bottom_shadow"
+        android:layout_alignBottom="@id/img"
+        android:scaleType="centerCrop"
+        android:transitionName="img"
+        tools:ignore="UnusedAttribute"/>
+
+    <FrameLayout
+        android:id="@+id/layoutDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/img"
+        android:background="@drawable/round_white"
+        android:padding="5dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="-50dp"
+
+        >
+
+
+        <ImageView
+            android:src="@drawable/ic_date"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/publishedAt"
+            android:text="1st Jan 2020"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="27dp"/>
+
+
+
+
+
+    </FrameLayout>
+
+
+    <ProgressBar
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/progress_load_photo"
+    android:layout_marginTop="70dp"
+    style="@android:style/Widget.ProgressBar.Small"/>
+    
+    <TextView
+        android:id="@+id/author"
+        android:layout_width="match_parent"
+        android:layout_below="@id/img"
+        android:text="Author"
+        android:gravity="bottom"
+        android:layout_alignLeft="@id/title"
+        android:textColor="#FFFF"
+        android:layout_alignStart="@id/title"
+
+        android:layout_height="30dp"/>
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/title"
+        android:text="Title"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_below="@id/img"
+        android:textSize="17dp"
+        android:layout_marginTop="10dp"/>
+    <TextView
+        android:id="@+id/desc"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_below="@id/title"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="5dp"
+        android:text="Desc"/>
+
+    <TextView
+        android:id="@+id/source"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_below="@id/desc"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="5dp"
+        android:textStyle="bold"
+        android:text="source"/>
+
+
+
+
+
+</RelativeLayout>
+
+
+
+
+
+
+
+
+    </androidx.cardview.widget.CardView>
+
+</FrameLayout>

@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "1069576973284",
+    "firebase_url": "https://cyber-watchdog.firebaseio.com",
+    "project_id": "cyber-watchdog",
+    "storage_bucket": "cyber-watchdog.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1069576973284:android:01ec160340bd5e03db75f1",
+        "android_client_info": {
+          "package_name": "com.example.cyberwatchdog"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1069576973284-8mug113euq5v851f9sk6omljvqoug6fo.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.cyberwatchdog",
+            "certificate_hash": "efc96c01441144ec38b425696dda256e38c359c2"
+          }
+        },
+        {
+          "client_id": "1069576973284-4tosfdoa3ofirtprdvp4qsbti10qkrf5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAtvYRR6x27b6vxuOg4ivDwjkZBbcBvXu0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1069576973284-4tosfdoa3ofirtprdvp4qsbti10qkrf5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
