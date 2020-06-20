@@ -22,15 +22,6 @@
         android:textStyle="bold" />
 
 
-    <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
-
     <Space
         android:layout_width="match_parent"
         android:layout_height="60dp"/>
@@ -58,7 +49,7 @@
             android:layout_height="10dp"/>
 
  <androidx.core.widget.NestedScrollView
-     android:layout_height="700dp"
+     android:layout_height="500dp"
 
      android:layout_width="match_parent">
      
@@ -103,8 +94,8 @@
         android:layout_height="wrap_content"
         android:background="@drawable/round_button" />
 
-    </LinearLayout>
 
-    </ScrollView>
+
+
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
