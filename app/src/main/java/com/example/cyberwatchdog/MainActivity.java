@@ -5,6 +5,7 @@ import androidx.recyclerview.widget.DefaultItemAnimator;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.Intent;
 import android.net.Uri;
@@ -32,12 +33,20 @@ private RecyclerView recyclerView;
 private RecyclerView.LayoutManager layoutManager;
 private List<Article> articles = new ArrayList<>();
 private Adapter adapter;
+    private ProgressDialog progressDialog2;
+
 private String TAG = MainActivity.class.getSimpleName();
     @Override
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
         setContentView(R.layout.activity_main);
+
+
+        progressDialog2 = new ProgressDialog(this);
+        progressDialog2.setMessage("Loading fresh news");
+        progressDialog2.show();
 
 
         // Displaying general scams page.
@@ -66,7 +75,9 @@ recyclerView.setNestedScrollingEnabled(false);
 
 
 
+
 loadJson();
+
 
     }
 
@@ -89,6 +100,8 @@ String q = "cyber scam";
                     adapter=new Adapter(articles,MainActivity.this,MainActivity.this);
                     recyclerView.setAdapter(adapter);
                     adapter.notifyDataSetChanged();
+
+                    progressDialog2.hide();
                 }
                 else{
 
