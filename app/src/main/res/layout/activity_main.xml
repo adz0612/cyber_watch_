@@ -7,8 +7,13 @@
     android:layout_height="match_parent"
     android:background="#A6CBFF"
     tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
     <TextView
         android:id="@+id/name"
+        android:layout_weight="1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="16dp"
@@ -22,16 +27,40 @@
         android:textStyle="bold" />
 
 
+
+        <TextView
+            android:id="@+id/score"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="16dp"
+            android:fontFamily="@font/amaranth_bold"
+            android:text=""
+            android:textColor="#FFFF"
+            android:textSize="20sp"
+
+            android:textStyle="bold" />
+
+
+
+    </LinearLayout>
     <Space
         android:layout_width="match_parent"
         android:layout_height="60dp"/>
 
     <LinearLayout
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_marginTop="160dp"
         android:orientation="vertical"
         android:layout_height="wrap_content">
 
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:padding="20dp"
+            android:layout_height="wrap_content">
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -40,10 +69,24 @@
             android:layout_marginRight="16dp"
             android:fontFamily="@font/amaranth_bold"
             android:text="Latest News"
+            android:layout_weight="1"
             android:textColor="#FFFF"
             android:textSize="25sp"
 
             android:textStyle="bold" />
+
+
+            <ImageButton
+                android:layout_width="50dp"
+                android:id="@+id/chat"
+                android:layout_height="50dp"
+                android:background="@android:drawable/stat_notify_chat">
+
+            </ImageButton>
+
+
+
+        </LinearLayout>
         <Space
             android:layout_width="match_parent"
             android:layout_height="10dp"/>
@@ -88,7 +131,7 @@
         android:id="@+id/generalScam"
         android:layout_width="300dp"
         android:layout_marginTop="720dp"
-        android:text="General Info"
+        android:text="Cyber Security tips"
         android:textStyle="normal"
         android:layout_marginLeft="60dp"
         android:layout_height="wrap_content"

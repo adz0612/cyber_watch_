@@ -85,6 +85,8 @@ public class Adapter extends RecyclerView.Adapter<Adapter.MyViewHolder> {
         holder.published_ad.setText(Utils.DateFormat(model.getPublishedAt()));
         holder.author.setText(model.getAuthor());
 
+        System.out.println(model.getUrl());
+
 
 
 

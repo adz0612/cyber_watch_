@@ -1,0 +1,77 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#A6CBFF"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ListView
+            android:id="@+id/mobile_list"
+            android:layout_width="match_parent"
+            android:transcriptMode="alwaysScroll"
+            android:stackFromBottom="true"
+            android:layout_height="450dp" />
+
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="30dp"/>
+        <Button
+            android:layout_width="200dp"
+            android:layout_height="70dp"
+            android:background="@drawable/round_button"
+            android:imeOptions="actionDone"
+            android:text="Send"
+            android:id="@+id/submit"
+            android:layout_gravity="center" />
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="30dp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:imeOptions="actionDone"
+            android:hint="Enter your message"
+            android:id="@+id/msg_txt" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="30dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:paddingLeft="50dp"
+            android:layout_height="match_parent">
+            <Button
+                android:layout_width="100dp"
+                android:layout_height="70dp"
+                android:background="@drawable/round_button"
+                android:text="Choose Image"
+                android:backgroundTint="#DCAA00"
+                android:id="@+id/upload"
+                android:layout_gravity="center" />
+
+            <Space
+                android:layout_width="50dp"
+                android:layout_height="match_parent"/>
+            <Button
+                android:layout_width="100dp"
+                android:layout_height="70dp"
+                android:background="@drawable/round_button"
+                android:text="Upload"
+                android:backgroundTint="#DCAA00"
+                android:id="@+id/choose"
+                android:layout_gravity="center" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>
