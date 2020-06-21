@@ -249,7 +249,10 @@ public class ChatActivity extends AppCompatActivity {
     @Override
     public void onBackPressed() {
         super.onBackPressed();
-        Intent intent = new Intent(getApplicationContext(),MainActivity.class);
-        startActivity(intent);
+        Intent n = new Intent(getApplicationContext(), MainActivity.class);
+        n.putExtra("name", u_name);
+        startActivity(n);
+        finish();
     }
+
 }

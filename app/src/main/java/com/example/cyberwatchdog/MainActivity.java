@@ -79,10 +79,12 @@ generalScam.setOnClickListener(new View.OnClickListener() {
         Intent n = getIntent();
         u_name = n.getStringExtra("name");
 TextView name = findViewById(R.id.name);
-if (u_name==null){
-    u_name = "Anonymous";
 
-        }
+
+
+
+
+
 name.setText("Welcome, "+u_name);
 
 recyclerView = findViewById(R.id.recyclerView);
@@ -248,6 +250,67 @@ String q = "cyber scam";
         }
         return "0";
     }
+
+
+
+    public String  Read2() {
+        try {
+            FileInputStream fileInputStream = openFileInput("nameOfPerson.txt");
+            InputStreamReader inputStreamReader = new InputStreamReader(fileInputStream);
+
+            BufferedReader bufferedReader = new BufferedReader(inputStreamReader);
+            StringBuffer stringBuffer = new StringBuffer();
+
+            String lines;
+            String score="";
+
+            while ((lines = bufferedReader.readLine()) != null) {
+                score = score+   stringBuffer.append(lines + "\n");
+            }
+            return score;
+
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        return "0";
+    }
+
+
+
+
+
+
+    public void Write2(String value)
+    {
+        String valueStr =value;
+        try {
+
+
+            FileOutputStream fileOutputStream = openFileOutput("nameOfPerson.txt",MODE_PRIVATE);
+            fileOutputStream.write((valueStr+"\n").getBytes());
+            fileOutputStream.close();
+
+
+        }
+        catch (FileNotFoundException e)
+        {
+            e.printStackTrace();
+        }
+        catch (IOException e){
+            e.printStackTrace();
+        }
+
+
+
+
+
+
+    }
+
+
+
 
 
 

@@ -13,8 +13,7 @@
         android:layout_height="wrap_content">
     <TextView
         android:id="@+id/name"
-        android:layout_weight="1"
-        android:layout_width="match_parent"
+        android:layout_width="200dp"
         android:layout_height="wrap_content"
         android:layout_marginLeft="16dp"
         android:layout_marginTop="10dp"
@@ -30,7 +29,6 @@
 
         <TextView
             android:id="@+id/score"
-            android:layout_weight="1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="16dp"
@@ -46,20 +44,96 @@
 
 
     </LinearLayout>
-    <Space
-        android:layout_width="match_parent"
-        android:layout_height="60dp"/>
+
+
+
+
+
+
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:layout_marginRight="11dp"
+            android:layout_marginLeft="11dp"
+            android:layout_marginBottom="7dp"
+            app:cardElevation="@dimen/cardview_default_elevation"
+            app:cardCornerRadius="10dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#EA888A"
+                >
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:id="@+id/img"
+                    android:src="@drawable/tipoftheday"
+                    android:scaleType="centerCrop"
+                    android:transitionName="img"
+                    tools:ignore="UnusedAttribute"/>
+
+
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/title"
+                    android:text="Be aware of options selected by default to limit spam."
+                    android:layout_marginRight="16dp"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="16dp"
+                    android:layout_below="@id/img"
+                    android:textSize="17dp"
+                    android:layout_marginTop="10dp"/>
+                <TextView
+                    android:id="@+id/desc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="15dp"
+                    android:layout_below="@id/title"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginTop="5dp"
+                    android:text=""/>
+
+
+            </RelativeLayout>
+
+
+
+
+
+
+
+
+        </androidx.cardview.widget.CardView>
+
+
+
+
+
+
+
+
+
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_marginTop="160dp"
+        android:layout_marginTop="190dp"
         android:orientation="vertical"
         android:layout_height="wrap_content">
-
+<Space
+    android:layout_width="wrap_content"
+    android:layout_height="10dp"/>
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:padding="20dp"
+            android:padding="10dp"
             android:layout_height="wrap_content">
         <TextView
             android:layout_width="match_parent"
@@ -77,19 +151,18 @@
 
 
             <ImageButton
-                android:layout_width="50dp"
                 android:id="@+id/chat"
+                android:layout_width="50dp"
                 android:layout_height="50dp"
-                android:background="@android:drawable/stat_notify_chat">
+                android:background="@android:drawable/stat_notify_chat"
+                android:tint="#ea474a">
 
             </ImageButton>
 
 
 
         </LinearLayout>
-        <Space
-            android:layout_width="match_parent"
-            android:layout_height="10dp"/>
+
 
  <androidx.core.widget.NestedScrollView
      android:layout_height="500dp"
